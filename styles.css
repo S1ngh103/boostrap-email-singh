@@ -6,6 +6,10 @@
     width: 100%;
 }
 
+.email-open{
+    background-color: #C6D2B3;
+}
+
 .greeting{
     text-align: center;
     font-size: 25px;
