@@ -2,6 +2,10 @@
     background-color: #9D5555;
 }
 
+.card{
+    width: 100%;
+}
+
 .greeting{
     text-align: center;
     font-size: 25px;
