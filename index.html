@@ -10,9 +10,10 @@
     <title>myCircle</title>
 </head>
 
-<body>
+<body class="d-flex flex-column">
+
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">myCircle</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -23,31 +24,78 @@
             <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarSupportedContent">
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <button class="button" type="submit">Search</button>
                 </form>
             </div>
         </div>
     </nav>
 
+    <!-- Side panel for mobile users -->
+    <div class="d-sm-flex d-lg-none d-md-none">
+        <a class="options btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+            aria-controls="offcanvasExample">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Choose Email-Type</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="email-types d-flex flex-column">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="offcanvas"
+                        aria-label="Close">Primary</button>
+                    <hr>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="offcanvas"
+                        aria-label="Close">Social</button>
+                    <hr>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="offcanvas"
+                        aria-label="Close">Promotions</button>
+                    <hr>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="offcanvas"
+                        aria-label="Close">Updates</button>
+                    <hr>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="offcanvas"
+                        aria-label="Close">Spam</button>
+                    <hr>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="offcanvas"
+                        aria-label="Close">Trash</button>
+                    <hr>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="offcanvas"
+                        aria-label="Close">Bookmarks</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Dividing the screen into columns and adding content -->
     <div class="container ">
         <div class="row">
-            <p class="greeting"><strong>Greetings from myCircle!</strong></p>
+            <hr>
+            <p class="greeting"><strong>Greetings from <br>myCircle!</strong></p>
+            <hr>
+
+            <!-- Compose email button -->
+            <div class="d-flex justify-content-center">
+                <button type="button" class="compose"><i class="fa-solid fa-pen-to-square"></i> DRAFT</button>
+            </div>
+
             <!-- Button column for different types of email sections -->
             <div class="email-types col-md-4 d-lg-flex d-sm-none d-none flex-column">
-                    <button type="button" class="btn btn-primary">Primary</button>
-                    <hr>
-                    <button type="button" class="btn btn-primary">Social</button>
-                    <hr>
-                    <button type="button" class="btn btn-primary">Promotions</button>
-                    <hr>
-                    <button type="button" class="btn btn-primary">Updates</button>
-                    <hr>
-                    <button type="button" class="btn btn-primary">Spam</button>
-                    <hr>
-                    <button type="button" class="btn btn-primary">Trash</button>
-                    <hr>
-                    <button type="button" class="btn btn-primary">Bookmarks</button>
+                <button type="button" class="btn btn-primary">Primary</button>
+                <hr>
+                <button type="button" class="btn btn-primary">Social</button>
+                <hr>
+                <button type="button" class="btn btn-primary">Promotions</button>
+                <hr>
+                <button type="button" class="btn btn-primary">Updates</button>
+                <hr>
+                <button type="button" class="btn btn-primary">Spam</button>
+                <hr>
+                <button type="button" class="btn btn-primary">Trash</button>
+                <hr>
+                <button type="button" class="btn btn-primary">Bookmarks</button>
             </div>
             <!-- Email column with emails waiting to be opened -->
             <div class="col-md-8 d-flex justify-content-center flex-column">
@@ -93,18 +141,17 @@
                 </div>
                 <div class="card" style="width: 100%;">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                        <h5 class="card-title">Keanu Reeves</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Good Morning!</h6>
+                        <p class="card-text">Hello Jaskirat, I was wondering if you would like to join me at central
+                            park today for a picnic with my dog. I'll be there at 5PM.</p>
                     </div>
                 </div>
                 <div class="card" style="width: 100%;">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                        <h5 class="card-title">Channing Tatum</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">my name is jeff</h6>
+                        <p class="card-text">my name is jeff</p>
                     </div>
                 </div>
             </div>
