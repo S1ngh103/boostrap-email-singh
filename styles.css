@@ -1,7 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+.whole-page{
+    background-color: #8F9D79;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 .navbar{
     background-color: #9D5555;
 }
 
+.offcanvas-tab{
+    background-color: #8F9D79;
+}
 .card{
     width: 100%;
 }
@@ -13,25 +24,46 @@
 .greeting{
     text-align: center;
     font-size: 25px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Quicksand';
 }
 
-.container{
-    background-color: #8F9D79;
-}
-
-.button{
+.search-button{
     color: black;
-    border-radius: 15%;
+    border-radius: 25%;
 }
 
-.compose{
+.draft{
     background-color: #9D5555;
     border-radius: 15%;
+}
+
+.draft-div{
+   padding: 10px;
 }
 
 .options{
     margin: 10px;
     z-index: 3;
     position: fixed;
+}
+
+.email-open{
+    flex-direction: column;
+}
+
+.reply-box{
+    width: 98%;
+}
+
+.send{
+    border-radius: 25%;
+    margin: 10px;
+    background-color: #9D5555;
+    align-self: flex-end;
+    width: 100px;
+    height: 40px;
+}
+
+.email-list{
+    overflow: auto;
 }
