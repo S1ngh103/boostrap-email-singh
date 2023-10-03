@@ -70,134 +70,121 @@
         </div>
 
         <!-- Components of email split into three columns -->
-        <div class="row">
-            <hr>
-            <p class="greeting"><strong>Greetings from <br>myCircle!</strong></p>
+        <div class="container-fluid">
+            <div class="row">
+                <hr>
+                <p class="greeting"><strong>Greetings from <br>myCircle!</strong></p>
 
-            <!-- Compose email button -->
-            <div class="draft-div d-flex justify-content-center">
-                <button type="button" class="draft"><i class="fa-solid fa-pen-to-square"></i> DRAFT</button>
-            </div>
-            
-            <!-- Showing the open email at the top of the screen for mobile view -->
-            <div class="email-open d-sm-flex d-lg-none d-none d-md-none d-flex">
-                <div>
-                    <h5 class="card-title">From: Amazon</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">Summer Sale</h6>
-                    <p>Check out our amazing summer sales! Click link below to see if your saved items went on
-                        sale!<br>
-                        <a href="https://amazon.com">Amazon Sales</a>
-                    </p>
+                <!-- Compose email button -->
+                <div class="draft-div d-flex justify-content-center">
+                    <button type="button" class="draft"><i class="fa-solid fa-pen-to-square"></i> DRAFT</button>
                 </div>
-                <textarea id="reply-box" name="reply-box" rows="4">
-                </textarea>
-                <button class="send"><i class="fa-regular fa-paper-plane"></i> Send</button>
-            </div>
-            
-            <!-- Button column for different types of email sections -->
-            <div class="email-types col-lg-2 d-lg-flex d-sm-none d-none d-md-flex flex-column">
-                <button type="button" class="btn btn-primary">Primary</button>
-                <hr>
-                <button type="button" class="btn btn-primary">Social</button>
-                <hr>
-                <button type="button" class="btn btn-primary">Promotions</button>
-                <hr>
-                <button type="button" class="btn btn-primary">Updates</button>
-                <hr>
-                <button type="button" class="btn btn-primary">Spam</button>
-                <hr>
-                <button type="button" class="btn btn-primary">Trash</button>
-                <hr>
-                <button type="button" class="btn btn-primary">Bookmarks</button>
-            </div>
+                
+                <!-- Button column for different types of email sections -->
+                <div class="email-types col-md-2 d-none d-md-flex flex-column order-md-0">
+                    <button type="button" class="btn btn-primary">Primary</button>
+                    <hr>
+                    <button type="button" class="btn btn-primary">Social</button>
+                    <hr>
+                    <button type="button" class="btn btn-primary">Promotions</button>
+                    <hr>
+                    <button type="button" class="btn btn-primary">Updates</button>
+                    <hr>
+                    <button type="button" class="btn btn-primary">Spam</button>
+                    <hr>
+                    <button type="button" class="btn btn-primary">Trash</button>
+                    <hr>
+                    <button type="button" class="btn btn-primary">Bookmarks</button>
+                </div>
 
-            <!-- Email column with emails waiting to be opened -->
-            <div class="email-list col-sm-12 col-lg-6 d-flex justify-content-center flex-column">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Amazon</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">Summer SALE!</h6>
-                        <p class="card-text">Check out our amazing summer sales! Click link below to see if your saved
-                            items went on sale!</p>
-                        <a href="#" class="card-link">Reply</a>
-                        <a href="#" class="card-link">Delete</a>
-                    </div>
+                <!-- Email column with emails waiting to be opened -->
+                <div class="email-list col-md-6 d-flex justify-content-center flex-column order-1">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Amazon</h5>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">Summer SALE!</h6>
+                            <p class="card-text">Check out our amazing summer sales! Click link below to see if your saved
+                                items went on sale!</p>
+                            <a href="#" class="card-link">Reply</a>
+                            <a href="#" class="card-link">Delete</a>
+                        </div>
 
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Lebron James</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">WAKE UP and GRIND!</h6>
-                        <p class="card-text">Do you want to join a FREE workout program created by future Hall of Famer
-                            Lebron James?</p>
-                        <a href="#" class="card-link">Reply</a>
-                        <a href="#" class="card-link">Delete</a>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Lebron James</h5>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">WAKE UP and GRIND!</h6>
+                            <p class="card-text">Do you want to join a FREE workout program created by future Hall of Famer
+                                Lebron James?</p>
+                            <a href="#" class="card-link">Reply</a>
+                            <a href="#" class="card-link">Delete</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Alfred Pennyworth</h5>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">Accountant Meeting</h6>
+                            <p class="card-text">Master Wayne, we will be having guests this evening. Will you be here or
+                                will our bat friend come out tonight?</p>
+                            <a href="#" class="card-link">Reply</a>
+                            <a href="#" class="card-link">Delete</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Groot</h5>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">I am Groot!</h6>
+                            <p class="card-text">I am Groot! I am Groot! I am Groot! I am Groot! I am Groot! I am Groot! I
+                                am Groot!</p>
+                            <a href="#" class="card-link">Reply</a>
+                            <a href="#" class="card-link">Delete</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">PlayStation</h5>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">NEW Arrivals! PlayStation Plus</h6>
+                            <p class="card-text">Check out this month's NEW additions to the PlayStation Store and claim
+                                this month's 2 FREE games through PlayStation Plus.</p>
+                            <a href="#" class="card-link">Reply</a>
+                            <a href="#" class="card-link">Delete</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Keanu Reeves</h5>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">Good Morning!</h6>
+                            <p class="card-text">Hello Jaskirat, I was wondering if you would like to join me at central
+                                park today for a picnic with my dog. I'll be there at 5PM.</p>
+                            <a href="#" class="card-link">Reply</a>
+                            <a href="#" class="card-link">Delete</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Channing Tatum</h5>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">my name is jeff</h6>
+                            <p class="card-text">my name is jeff</p>
+                            <a href="#" class="card-link">Reply</a>
+                            <a href="#" class="card-link">Delete</a>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Alfred Pennyworth</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">Accountant Meeting</h6>
-                        <p class="card-text">Master Wayne, we will be having guests this evening. Will you be here or
-                            will our bat friend come out tonight?</p>
-                        <a href="#" class="card-link">Reply</a>
-                        <a href="#" class="card-link">Delete</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Groot</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">I am Groot!</h6>
-                        <p class="card-text">I am Groot! I am Groot! I am Groot! I am Groot! I am Groot! I am Groot! I
-                            am Groot!</p>
-                        <a href="#" class="card-link">Reply</a>
-                        <a href="#" class="card-link">Delete</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">PlayStation</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">NEW Arrivals! PlayStation Plus</h6>
-                        <p class="card-text">Check out this month's NEW additions to the PlayStation Store and claim
-                            this month's 2 FREE games through PlayStation Plus.</p>
-                        <a href="#" class="card-link">Reply</a>
-                        <a href="#" class="card-link">Delete</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Keanu Reeves</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">Good Morning!</h6>
-                        <p class="card-text">Hello Jaskirat, I was wondering if you would like to join me at central
-                            park today for a picnic with my dog. I'll be there at 5PM.</p>
-                        <a href="#" class="card-link">Reply</a>
-                        <a href="#" class="card-link">Delete</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Channing Tatum</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">my name is jeff</h6>
-                        <p class="card-text">my name is jeff</p>
-                        <a href="#" class="card-link">Reply</a>
-                        <a href="#" class="card-link">Delete</a>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Current Open Email with reply button -->
-            <div class="email-open col-sm-12 col-lg-4 col-md-4 d-sm-none d-none d-md-flex d-lg-flex">
-                <div>
-                    <h5 class="card-title">From: Amazon</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">Summer Sale</h6>
-                    <p>Check out our amazing summer sales! Click link below to see if your saved items went on
-                        sale!<br>
-                        <a href="https://amazon.com">Amazon Sales</a>
-                    </p>
+                <!-- Current Open Email with reply button -->
+                <div class="email-open col-sm-12 col-md-4 d-flex order-0 order-md-2">
+                    <div>
+                        <h5 class="card-title">From: Amazon</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Summer Sale</h6>
+                        <p>Check out our amazing summer sales! Click link below to see if your saved items went on
+                            sale!<br>
+                            <a href="https://amazon.com">Amazon Sales</a>
+                        </p>
+                    </div>
+                    <textarea id="reply-box" name="reply-box" rows="4">
+                    </textarea>
+                    <button class="send"><i class="fa-regular fa-paper-plane"></i> Send</button>
                 </div>
-                <textarea id="reply-box" name="reply-box" rows="4">
-                </textarea>
-                <button class="send"><i class="fa-regular fa-paper-plane"></i> Send</button>
             </div>
         </div>
     </div>
