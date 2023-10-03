@@ -10,9 +10,6 @@
     background-color: #9D5555;
 }
 
-.offcanvas-tab{
-    background-color: #8F9D79;
-}
 .card{
     width: 100%;
 }
@@ -51,8 +48,8 @@
     flex-direction: column;
 }
 
-.reply-box{
-    width: 98%;
+#reply-box{
+    resize: none;
 }
 
 .send{
