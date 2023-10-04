@@ -38,10 +38,12 @@
    padding: 10px;
 }
 
-.options{
-    margin: 10px;
-    z-index: 3;
-    position: fixed;
+.offcanvas-body{
+    background-color: #8F9D79;
+}
+
+.offcanvas-header{
+    background-color: #9D5555;
 }
 
 .email-open{

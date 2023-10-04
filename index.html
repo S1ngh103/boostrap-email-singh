@@ -11,15 +11,19 @@
 </head>
 
 <body>
-    <!-- Navbar -->
     <div class="whole-page">
+        <!-- Navbar -->
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">myCircle</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <!-- Offcanvas Button -->
+                    <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                        aria-controls="offcanvasExample">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
                 </button>
                 <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarSupportedContent">
                     <form class="d-flex" role="search">
@@ -30,41 +34,35 @@
             </div>
         </nav>
 
-        <!-- Side panel for mobile users -->
-        <div class="d-sm-flex d-lg-none d-md-none">
-            <a class="options btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-                aria-controls="offcanvasExample">
-                <i class="fa-solid fa-bars"></i>
-            </a>
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
-                aria-labelledby="offcanvasExampleLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Choose Email-Type</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <div class="email-types d-flex flex-column">
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="offcanvas"
-                            aria-label="Close">Primary</button>
-                        <hr>
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="offcanvas"
-                            aria-label="Close">Social</button>
-                        <hr>
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="offcanvas"
-                            aria-label="Close">Promotions</button>
-                        <hr>
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="offcanvas"
-                            aria-label="Close">Updates</button>
-                        <hr>
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="offcanvas"
-                            aria-label="Close">Spam</button>
-                        <hr>
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="offcanvas"
-                            aria-label="Close">Trash</button>
-                        <hr>
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="offcanvas"
-                            aria-label="Close">Bookmarks</button>
-                    </div>
+        <!-- Offcanvas Properties -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Choose Email-Type</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="email-types d-flex flex-column">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="offcanvas"
+                        aria-label="Close">Primary</button>
+                    <hr>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="offcanvas"
+                        aria-label="Close">Social</button>
+                    <hr>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="offcanvas"
+                        aria-label="Close">Promotions</button>
+                    <hr>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="offcanvas"
+                        aria-label="Close">Updates</button>
+                    <hr>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="offcanvas"
+                        aria-label="Close">Spam</button>
+                    <hr>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="offcanvas"
+                        aria-label="Close">Trash</button>
+                    <hr>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="offcanvas"
+                        aria-label="Close">Bookmarks</button>
                 </div>
             </div>
         </div>
@@ -79,9 +77,9 @@
                 <div class="draft-div d-flex justify-content-center">
                     <button type="button" class="draft"><i class="fa-solid fa-pen-to-square"></i> DRAFT</button>
                 </div>
-                
+
                 <!-- Button column for different types of email sections -->
-                <div class="email-types col-md-2 d-none d-md-flex flex-column order-md-0">
+                <div class="email-types col-lg-2 d-none d-lg-flex flex-column order-md-0">
                     <button type="button" class="btn btn-primary">Primary</button>
                     <hr>
                     <button type="button" class="btn btn-primary">Social</button>
@@ -103,7 +101,8 @@
                         <div class="card-body">
                             <h5 class="card-title">Amazon</h5>
                             <h6 class="card-subtitle mb-2 text-body-secondary">Summer SALE!</h6>
-                            <p class="card-text">Check out our amazing summer sales! Click link below to see if your saved
+                            <p class="card-text">Check out our amazing summer sales! Click link below to see if your
+                                saved
                                 items went on sale!</p>
                             <a href="#" class="card-link">Reply</a>
                             <a href="#" class="card-link">Delete</a>
@@ -114,7 +113,8 @@
                         <div class="card-body">
                             <h5 class="card-title">Lebron James</h5>
                             <h6 class="card-subtitle mb-2 text-body-secondary">WAKE UP and GRIND!</h6>
-                            <p class="card-text">Do you want to join a FREE workout program created by future Hall of Famer
+                            <p class="card-text">Do you want to join a FREE workout program created by future Hall of
+                                Famer
                                 Lebron James?</p>
                             <a href="#" class="card-link">Reply</a>
                             <a href="#" class="card-link">Delete</a>
@@ -124,7 +124,8 @@
                         <div class="card-body">
                             <h5 class="card-title">Alfred Pennyworth</h5>
                             <h6 class="card-subtitle mb-2 text-body-secondary">Accountant Meeting</h6>
-                            <p class="card-text">Master Wayne, we will be having guests this evening. Will you be here or
+                            <p class="card-text">Master Wayne, we will be having guests this evening. Will you be here
+                                or
                                 will our bat friend come out tonight?</p>
                             <a href="#" class="card-link">Reply</a>
                             <a href="#" class="card-link">Delete</a>
@@ -134,7 +135,8 @@
                         <div class="card-body">
                             <h5 class="card-title">Groot</h5>
                             <h6 class="card-subtitle mb-2 text-body-secondary">I am Groot!</h6>
-                            <p class="card-text">I am Groot! I am Groot! I am Groot! I am Groot! I am Groot! I am Groot! I
+                            <p class="card-text">I am Groot! I am Groot! I am Groot! I am Groot! I am Groot! I am Groot!
+                                I
                                 am Groot!</p>
                             <a href="#" class="card-link">Reply</a>
                             <a href="#" class="card-link">Delete</a>
@@ -172,7 +174,7 @@
                 </div>
 
                 <!-- Current Open Email with reply button -->
-                <div class="email-open col-sm-12 col-md-4 d-flex order-0 order-md-2">
+                <div class="email-open col-sm-12 col-md-6 col-lg-4 d-flex order-0 order-md-2">
                     <div>
                         <h5 class="card-title">From: Amazon</h5>
                         <h6 class="card-subtitle mb-2 text-body-secondary">Summer Sale</h6>
